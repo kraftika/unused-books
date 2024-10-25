@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Carti pentru copii</title>
+      </head>
+      <body className={inter.className}>
+        <div className="ml-auto mr-auto w-full max-w-[720px]">
+          <div className="pl-4 pr-4">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
